@@ -26,7 +26,7 @@ poetry install
 
 poetry self add poetry-dotenv-plugin
 
-poetry run uvicorn app:app
+poetry run uvicorn main:app --reload
 ```
 
 ## ブラウザで閲覧

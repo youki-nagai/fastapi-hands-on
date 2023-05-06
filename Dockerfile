@@ -22,3 +22,5 @@ RUN poetry self add poetry-dotenv-plugin
 
 RUN poetry config virtualenvs.create false \
   && poetry install --no-interaction --no-ansi
+
+CMD poetry run uvicorn app:app --host 0.0.0.0

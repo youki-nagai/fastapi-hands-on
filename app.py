@@ -1,7 +1,8 @@
 from fastapi import FastAPI
-import os
+from router import articles
 
 app = FastAPI()
+app.include_router(articles.router)
 
 
 @app.get("/")

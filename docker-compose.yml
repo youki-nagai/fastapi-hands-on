@@ -1,5 +1,6 @@
 services:
   python:
+    command: poetry run uvicorn main:app --host 0.0.0.0 --reload
     build: .
     volumes:
       - .:/workdir

@@ -3,6 +3,6 @@ from fastapi import APIRouter
 router = APIRouter(prefix="/v1/articles", tags=["v1/articles"])
 
 
-@router.get("/all")
+@router.get("")
 def index():
-    return {"article": "all"}
+    return {"articles": "all"}
